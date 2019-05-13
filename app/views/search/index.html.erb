@@ -1,0 +1,22 @@
+<div class="card text-center">
+  <div class="card-header">
+  	<h3> Results </h3>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card border-0">
+      <div class="card-body">
+        <p class="card-text mt-2"><u><%= link_to "#{@result.title}", @result.fullurl, class: "card-link float-right", target: "_blank"%></u></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card border-0">
+      <div class="card-body">
+        <p class="card-text"><%= link_to "Download as PDF", download_pdf_path(term: @result.title), class: "btn btn-primary card-link"%></p>
+      </div>
+    </div>
+  </div>
+</div>

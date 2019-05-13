@@ -1,0 +1,24 @@
+<div class="container">
+   <div class="row justify-content-center search-section">
+                        <div class="col-12 col-md-10 col-lg-8">
+                           <h3 class="text-center">Wikipedia Content Search</h5><br />
+                            <%= form_tag(search_path, method: 'get',class: "card card-sm search-form") do %>
+                                <div class="card-body row no-gutters align-items-center">
+                                    <div class="col-auto">
+                                        <i class="fas fa-search h4 text-body"></i>
+                                    </div>
+                                    <!--end of col-->
+                                    <div class="col">
+                                       <%= text_field_tag :term, "", class: "form-control form-control-lg form-control-borderless search-input", placeholder: "Search topics or keywords" %>
+                                    </div>
+                                    <!--end of col-->
+                                    <div class="col-auto">
+                                      <%= submit_tag 'Search', class: "btn btn-lg btn-success search-button" %>
+                                    </div>
+                                    <!--end of col-->
+                                </div>
+                           <% end %>
+                        </div>
+                        <!--end of col-->
+                    </div>
+</div>
