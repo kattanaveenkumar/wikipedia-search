@@ -10,6 +10,7 @@
 1) bundle install
 2) rake db:create
 3) rake db:migrate
+4) rails server
 
 If you get any issues while downloading pdf (such as 'Bad wkhtmltopdf's path for wicked_pdf and wkhtmltopdf'), please run the following command.
 
